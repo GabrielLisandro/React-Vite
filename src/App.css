@@ -1,0 +1,60 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background: #61dafb;
+  
+}
+body{
+  background: #404344;
+  animation: myback 10s infinite both;
+}
+@keyframes myback {
+  0% {background-image: linear-gradient(rgba(0, 247, 255, 0.5), rgba(255, 255, 0, 0.5));}
+  50% {background-color: rgb(0, 132, 255);}
+  100% {background-image: linear-gradient(rgba(0, 247, 255, 0.5), rgba(255, 255, 0, 0.5));}
+
+}
+.btn{
+  background: linear-gradient(#FBEEAC, #F4D160);
+  background-color: aliceblue;
+}
+.btn:hover{
+  background-image: linear-gradient(#75C2F6, #1D5D9B);
+}
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #df1010;
+}
